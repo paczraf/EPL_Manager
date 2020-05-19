@@ -1,4 +1,4 @@
-package Model;
+package com.paczraf.EPL_Manager.Model;
 
 import lombok.Data;
 

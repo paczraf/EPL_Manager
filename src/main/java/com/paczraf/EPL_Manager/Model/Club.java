@@ -1,4 +1,4 @@
-package Model;
+package com.paczraf.EPL_Manager.Model;
 
 import lombok.Data;
 
@@ -11,6 +11,4 @@ public class Club {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    @ManyToOne
-    private Player players;
 }
