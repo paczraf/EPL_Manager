@@ -12,12 +12,12 @@ public class Player {
     private Integer id;
     private String name;
     private String surname;
-    @OneToOne
+    @ManyToOne
     private Club club;
     private String position;
     private int gkSkills;
     private int dfSkills;
-    private int mdSkills;
+    private int mfSkills;
     private int fwSkills;
 
 }
