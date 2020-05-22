@@ -13,7 +13,7 @@ public class Player {
     private String name;
     private String surname;
     @ManyToOne
-    private Club club;
+    public Club club;
     private String position;
     private int gkSkills;
     private int dfSkills;
