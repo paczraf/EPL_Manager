@@ -27,4 +27,9 @@ public interface PlayerRepository extends JpaRepository<Player, Integer> {
             ") AS sumOfBest", nativeQuery = true)
     int countFwSkillsByClub(int club_id, int numberOfPlayers);
 
+    @Query(value = "SELECT SUM(gk_skills) FROM (SELECT * FROM Player  WHERE position=\"GK\" AND " +
+            "club_id=:club_id ORDER BY gk_Skills DESC limit 1" +
+            ") AS sumOfBest", nativeQuery = true)
+    int countGkSkillsByClub(int club_id);
+
 }
