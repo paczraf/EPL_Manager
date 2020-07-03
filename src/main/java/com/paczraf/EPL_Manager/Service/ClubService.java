@@ -14,4 +14,8 @@ public class ClubService {
     @Autowired
     ClubRepository clubRepository;
 
+    public List<Club> getAll(){
+        return clubRepository.findAll();
+    }
+
 }
