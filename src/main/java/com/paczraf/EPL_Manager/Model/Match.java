@@ -14,14 +14,14 @@ public class Match {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     @OneToOne
-    private Club teamNo1;
+    private Club homeClub;
     @OneToOne
-    private Club teamNo2;
-    private int teamNo1Goals;
-    private int teamNo2Goals;
+    private Club awayClub;
+    private int homeClubGoals;
+    private int awayClubGoals;
     @OneToOne
-    private Tactic teamNo1Tactic;
+    private Tactic homeClubTactic;
     @OneToOne
-    private Tactic teamNo2Tactic;
+    private Tactic awayClubTactic;
     private int result;
 }
