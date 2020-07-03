@@ -12,6 +12,4 @@ public class Club {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
-    @OneToMany(mappedBy = "club")
-    private List<Player> players;
 }
